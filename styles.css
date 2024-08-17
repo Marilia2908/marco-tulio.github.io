@@ -1,0 +1,172 @@
+/* Reseta o margin e padding padrão dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define o estilo do body */
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Define o estilo do header */
+header {
+    background-color: #0033A0; /* Azul Escuro */
+    color: rgb(245, 7, 7);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: rgb(247, 246, 246);
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Define o estilo do main */
+main {
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Estilo para títulos h2 */
+h2 {
+    margin-top: 20%
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Estilo para parágrafos */
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Define o estilo do footer */
+footer {
+    background-color: #FFD700; /* Amarelo */
+    color: #ff0a0a; /* Vermelho */
+    text-align: center;
+    padding: 5px 0; /* Reduz o padding para fazer a faixa mais fina */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em; /* Ajuste o tamanho da fonte conforme necessário */
+    line-height: 1.2; /* Ajusta a altura da linha para melhorar a legibilidade do texto */
+}
+
+
+
+/* Estilo para a seção de introdução */
+.intro-content {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaça as imagens e o texto */
+    flex-wrap: wrap; /* Permite que o conteúdo se ajuste em diferentes tamanhos de tela */
+    gap: 20px; /* Espaço entre o texto e as imagens */
+}
+
+/* Estilo para o texto */
+.text {
+    flex: 1; /* Faz o texto ocupar o espaço disponível */
+    max-width: 600px; /* Limita a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto */
+}
+
+/* Estilo para as imagens do perfil */
+.profile-img {
+    width: 320px; /* Ajusta a largura das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Imagem à esquerda */
+.profile-img.left {
+    transform: rotate(-15deg); /* Rotaciona a imagem à esquerda */
+}
+
+/* Imagem à direita */
+.profile-img.right {
+    transform: rotate(17deg); /* Rotaciona a imagem à direita */
+}
+
+/* Estilo para o formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Ajusta o tamanho máximo do formulário */
+    margin: 0 auto; /* Centraliza o formulário na página */
+    padding: 8px; /* Adiciona um pouco de espaço interno */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    background-color: #FFD700; /*  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Corrige a sintaxe da sombra */
+    font-family: 'Oswald', sans-serif; /* Atualiza a fonte */
+    text-align: center; /* Centraliza o texto dentro do formulário */
+}
+
+form label {
+    margin-top:15px; /* Espaço acima dos labels */
+    margin-bottom: 2px; /* Espaço abaixo dos labels */
+    display: block; /* Faz com que o label ocupe a largura total */
+}
+
+form input, form textarea {
+    margin-top: 2px; /* Espaço acima dos campos */
+    padding: 2px;
+    border: 2px solid #000; /* Preto */
+    width: 100%; /* Faz os campos ocuparem toda a largura do formulário */
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total do campo */
+    font-family: 'Oswald', sans-serif; /* Atualiza a fonte */
+}
+
+form textarea {
+    resize: vertical; /* Permite redimensionar o campo de texto apenas na vertical */
+    min-height: 80px; /* Altura mínima para o campo de texto */
+}
+
+form button {
+    margin-top: 5px; /* Espaço acima do botão */
+    padding: 5px;
+    border: none;
+    background-color: #0033A0; /* Azul Vibrante */
+    color: #FFFFFF; /* Branco */
+    cursor: pointer;
+    width: 50%; /* Faz o botão ocupar metade da largura do formulário */
+    align-self: center; /* Centraliza o botão horizontalmente no formulário */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-family: 'Oswald', sans-serif; /* Atualiza a fonte */
+}
+
+form button:hover {
+    background-color: #C8102E; /* Vermelho mais escuro */
+}
+
